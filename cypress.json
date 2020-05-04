@@ -11,5 +11,5 @@
   "baseUrl": "https://dana-train-web-admin-stg.enouvo.com/",
   "watchForFileChanges": false,
   "chromeWebSecurity": false,
-  "reporter": "reporters/custom.js"
+  "reporter": "nyan"
 }

@@ -1,6 +1,8 @@
 import LoginPage from "../PageObjects/LoginPage";
+import Dashboard from "../PageObjects/DashboardPage";
 
 const loginPage = new LoginPage();
+const dasboardPage = new Dashboard();
 
 
 When(/^I see the logo$/, () => {
@@ -36,4 +38,8 @@ Then(/^I see warning message below user input$/, function () {
   Then(/^I see notification error message$/, function () {
     loginPage.checkElementVisibleByCss(loginPage.alertIncorrectUser);
   });
+
+  Then(/^I see Menu icon at dashboard page$/, function () {
+    dasboardPage.checkElementVisibleByCss(dasboardPage.menuIconDashboard);
+  });  
 

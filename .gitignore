@@ -2,3 +2,6 @@
 /package-lock.json
 /cypress/screenshots
 /cypress/videos
+/cypress/report
+/cypress/cucumber-json
+/reports
