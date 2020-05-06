@@ -18,15 +18,15 @@ beforeEach(function () {
     cy.log('End testing..........')
     cy.clearLocalStorage()
     cy.clearCookies()
-    cy.eyesClose();
+    // cy.eyesClose();
     // cy.reload(true)
   })
   
   Given(/^I open Danatrain site by desktop screen$/, function () {
-    cy.eyesOpen({
-      appName: 'DanaTrain',
-      testName: `DanaTrain UI testing on Desktop`
-    });
+    // cy.eyesOpen({
+    //   appName: 'DanaTrain',
+    //   testName: `DanaTrain UI testing on Desktop`
+    // });
     cy.visit({
       url :"https://dana-train-web-admin-" + Cypress.env('env') + ".enouvo.com/login",
       failOnStatusCode: false
@@ -34,13 +34,13 @@ beforeEach(function () {
   });
 
   Given(/^I open Danatrain site by iphoneX$/, function () {
-    cy.eyesOpen({
-      appName: 'DanaTrain',
-      testName: `DanaTrain UI testing on iphoneX`,
-      browser: {
-        deviceName: 'iPhone X'
-      }
-    });
+    // cy.eyesOpen({
+    //   appName: 'DanaTrain',
+    //   testName: `DanaTrain UI testing on iphoneX`,
+    //   browser: {
+    //     deviceName: 'iPhone X'
+    //   }
+    // });
     cy.visit({
       url :"https://dana-train-web-admin-" + Cypress.env('env') + ".enouvo.com/login",
       failOnStatusCode: false

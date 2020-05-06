@@ -7,12 +7,12 @@ const dasboardPage = new Dashboard();
 
 When(/^I see the logo$/, () => {
     loginPage.checkElementVisibleByCss(loginPage.logo);
-    cy.wait(500)
-    cy.eyesCheckWindow('See logo');
-    cy.eyesCheckWindow({
-        sizeMode: 'selector', //mode
-        selector: loginPage.userName //CSS Selector
-      });
+    // cy.wait(500)
+    // cy.eyesCheckWindow('See logo');
+    // cy.eyesCheckWindow({
+    //     sizeMode: 'selector', //mode
+    //     selector: loginPage.userName //CSS Selector
+    //   });
 });
 
 Then(/^I see warning message below user input$/, function () {

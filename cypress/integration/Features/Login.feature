@@ -54,7 +54,7 @@ Login steps
             Given I open Danatrain site by desktop screen
              When I see the logo
               And I enter " " data to user input
-              And I enter "234" data to password input
+              And I enter "123" data to password input
              Then I see warning message below user input
 
         Scenario:Login with empty password data by iphoneX
@@ -78,4 +78,4 @@ Login steps
               And I enter "admin" data to user input
               And I enter "234" data to password input
               And I click on submit button
-              And I see Menu icon at dashboard page
+             Then I see Menu icon at dashboard page
