@@ -17,6 +17,15 @@ class Dashboard extends AbtractsPage {
         this.createNewUserBtn = '.sc-fzoiQi > .ant-btn-primary';
         this.addImageBtn = '.image-hover > .anticon > svg';
         this.notification = '.ant-notification-notice';
+
+        this.announcementIcon = '[title="Thông báo"]';
+        this.createNewAnnouncementBtnAtDashboard = '.vActions > .ant-btn';
+        this.typeAnnouncementInput = '.ant-form > :nth-child(1) > :nth-child(1) > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .sc-fzpjYC > .ant-select-selection > .ant-select-selection__rendered';
+        this.titleAnnouncementInput = '#title';
+        this.contentAnnouncementInput = '#content';
+        this.uploadFileAnnouncement = '.overlayImage > img';
+        this.typeAnnouncementForm = '.ant-drawer-body';
+        this.createNewAnnouncementBtn = '.sc-fzoiQi > .ant-btn-primary';
     }
 
 }

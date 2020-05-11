@@ -8,6 +8,7 @@
     "cucumber-html-reporter": "^5.2.0",
     "cypress": "^4.4.1",
     "cypress-cucumber-preprocessor": "^2.3.1",
+    "cypress-file-upload": "^4.0.6",
     "cypress-xpath": "^1.4.0",
     "mocha": "^7.1.2",
     "mochawesome": "^6.1.1",

@@ -48,11 +48,5 @@ beforeEach(function () {
 
     cy.viewport('iphone-x')
   });
-  
-  
-  
 
-  
-
-  
   

@@ -16,7 +16,7 @@ class AbtractsPage {
       this.random = Math.random()
         .toString(36)
         .replace(/[^a-z]+/g, "")
-        .substr(0, 7);
+        .substr(0, 10);
   
       // this.randomEmail = "bi.nguyen+" + this.random + "@reebonz.com";
       // this.password = "123456"
@@ -135,6 +135,38 @@ class AbtractsPage {
            cy.log('Dont have element')
          }
         })
+    }
+
+    checkElementVisibleAndTypeByCssThenClick = (element, value) => {
+      return cy.get(element,{timeout:5000}).then($input => {
+        if ($input.is(':visible')) {
+          cy.get(element).type(value).click()
+         }else{
+           cy.log('Dont have element')
+         }
+        })
+    }
+
+    uploadJPEGImage = (element, fileName) => {
+
+      const dropEvent = {
+        dataTransfer: {
+            files: [
+            ],
+        },
+    };
+    
+    cy.fixture(fileName).then((picture) => {
+        return Cypress.Blob.base64StringToBlob(picture, 'image/jpeg').then((blob) => {
+            dropEvent.dataTransfer.files.push(blob);
+        });
+    });
+    
+    cy.get(element).trigger('drop', dropEvent);
+    }
+
+    typeEnterButton = (element) => {
+      cy.get(element).type('{enter}')
     }
   
     //   checkElementIsPresentAndConvertToNumber = async (elementWait) => {
