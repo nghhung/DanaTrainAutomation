@@ -130,7 +130,7 @@ class AbtractsPage {
     checkElementVisibleAndTypeByCssThenEnter = (element, value) => {
       return cy.get(element,{timeout:5000}).then($input => {
         if ($input.is(':visible')) {
-          cy.get(element).type(value).type('{enter}')
+          cy.get(element).type('hung{enter}')
          }else{
            cy.log('Dont have element')
          }

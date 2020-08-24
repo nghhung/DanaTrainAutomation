@@ -23,6 +23,8 @@ Then(/^I see warning message below user input$/, function () {
     loginPage.checkElementVisibleAndTypeByCss(loginPage.userName,user)
   });
 
+ 
+
   And(/^I enter \"([^\"]*)\" data to password input$/, function (password) {
     loginPage.checkElementVisibleAndTypeByCss(loginPage.password,password)
   });

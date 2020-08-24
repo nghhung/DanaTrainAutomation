@@ -15,7 +15,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Giám Đốc" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Giám Đốc" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -34,7 +34,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Giám Đốc" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Phó Giám Đốc" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -53,7 +53,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Giám Đốc" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Trưởng Phòng" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -72,7 +72,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Giám Đốc" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Phó Phòng" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -91,7 +91,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Văn Thư" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Văn Thư" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -110,7 +110,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Văn Thư" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Chuyên Viên" input
         And I enter password to create new user input
         And I click on submit new user button
@@ -129,7 +129,7 @@ Feature: Create new user
         And I enter username on TenDangNhap input
         And I enter lastName and firstName on HoVaTen input
         And I enter email input
-        And I enter department "Ban Tài Chính" input
+        And I enter department "Phòng TCKT" input
         And I enter posittion "Nhân Viên" input
         And I enter password to create new user input
         And I click on submit new user button
